@@ -106,7 +106,7 @@ function Purchases() {
 	    }
 	});
 
-	  //handle click event per note
+	  //handle click event per entry
 	$(".item-output").on("click", "p", function() {
 	    //check if other delete buttons visible
 	    if (checkVisible($("button.item-delete")) === true) {
@@ -114,7 +114,7 @@ function Purchases() {
 	      $(this).siblings().attr("active", "false");
 	      $("button.item-delete").hide();
 	    }
-	    //then handle click event for current note
+	    //then handle click event for current entry
 	    if (!$(this).attr("active") || $(this).attr("active") === "false") {
 	      $(this).attr("active", "true");
 	      $(this).children("button.item-delete").show();
