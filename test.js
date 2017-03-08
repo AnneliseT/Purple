@@ -38,26 +38,26 @@ function Purchases() {
 	    var $item_value = $("#item-value");
 	    //conditional check for input field
 	    if ($item_name.val() !== "") {
-	      //set content for note
+	      //set content for entry
 	      $totalPrice = $totalPrice + Number($item_value.val(), 10);
 	      $totalPrice = Number($totalPrice.toFixed(2), 10);
 	      $item.html($item_name.val() + ", "+ $item_value.val()+ ", " + $totalPrice);
 
-	      //append delete button to each note
+	      //append delete button to each entry
 	      $item.prepend($delete_button);
-	      //hide new note to setup fadeIn...
+	      //hide new entry to setup fadeIn...
 	      $item.hide();
-	      //hide delete button until user selects note
+	      //hide delete button until user selects entry
 	      $delete_button.hide();
-	      //append note text to note-output
+	      //append item text to item-output
 	      $(".item-output").append($item);
-	      //fadeIn hidden new note
+	      //fadeIn hidden new entry
 	      $item.fadeIn("slow");
-	      //clear note value
+	      //clear entry value
 	      $item_name.val("");
 	      $item_value.val("");
 	      //$item_value.val("");
-	      //check visibility of note controls
+	      //check visibility of item controls
 	      if (checkVisible($(".item-controls")) === true) {
 	        $(".item-controls").fadeIn();
 	      }
@@ -80,28 +80,28 @@ function Purchases() {
 	    }
 	});
 
-	  //handle deletion of single note - bind to existing element...
+	  //handle deletion of single entry - bind to existing element...
 	$(".item-output").on("click", "button.item-delete" , function() {
-	    //delete parent note
+	    //delete parent entry
 	    $(this).parent().remove();
-	    //set note selector
+	    //set item selector
 	    var $item = $(".item-output p");
-	    //check for empty notes, and then remove note-controls
+	    //check for empty entries, and then remove item-controls
 	      if (checkExist($item) === false) {
-	        //hide note-controls
+	        //hide item-controls
 	        $(".item-controls").hide();
 	      }
 	});
 
-	  //handle deletion of all notes
+	  //handle deletion of all entries
 	$("#items-delete").on("click", function(e) {
-	    //set note selector
+	    //set entry selector
 	    var $item = $(".item-output p");
-	    //check $note exists
+	    //check $item exists
 	    if (checkExist($item) === true) {
-	      //hide note-controls
+	      //hide item-controls
 	      $(this).parent().hide();
-	      //remove all notes
+	      //remove all entries
 	      $item.remove();
 	    }
 	});
