@@ -46,36 +46,48 @@ button:hover {
     font-family: "Courier New";
 }
 /* input field for note */
-.note-input input {
+.item-input input {
   width: 40%;
 }
 /* note controls */
-.note-controls {
-  width: 830px;
-  margin: auto;
-  padding: 10px;
-  border-bottom: 1px solid #dedede;
+.item-controls {
+  width: 70%;
   display: none;
 }
+
+section.item-output {
+  min-height: 30px; 
+  border-top:1px dotted #ded1e0;
+  margin-top: 5px;
+  }
+}
+section.entry {
+  margin-bottom: 5px;
+}
 /* note paragraph output */
-.note-output p {
+.item-output p {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #b1c4b1;
   cursor:pointer;
 }
 /* note paragraph output hover */
-.note-output p:hover {
-  border: 1px solid #1a3852;
+.item-output p:hover {
+  border: 1px solid #932793;
+  border-radius: 3px;
 }
 /* note delete button */
-.note-output p button.note-delete {
-  display: block;
+.item-output p button.item-delete {
+  display: inline-block;
   padding: 5px;
-  margin: 5px 5px 10px 0;
+  margin-right: 10px;
   border-radius: 0;
   border: 1px solid #dedede;
   cursor: pointer;
+}
+
+.total-price {
+  border-top: 1px dotted #ded1e0;
+  vertical-align: text-bottom; 
 }
 /* site footer */
 footer {
