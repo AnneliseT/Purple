@@ -19,7 +19,6 @@ function Purchases() {
     return BASE_ID;
   }
 
-
   //generates an Item object with a name, a price, and an associated id
   function makeItem(name, price) {
     return {
@@ -219,6 +218,7 @@ function Purchases() {
   });
   // initial calc of total price
   updateTotalPrice();
+  createTable();
 };
 
 $(document).ready(Purchases);

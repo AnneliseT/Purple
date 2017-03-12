@@ -69,6 +69,7 @@ section.entry {
   margin: 10px;
   padding: 10px;
   cursor:pointer;
+  border-left: 1px dotted #ded1e0;
 }
 /* note paragraph output hover */
 .item-output p:hover {
@@ -98,3 +99,4 @@ footer {
 footer p {
   font-size: 0.8em;
 }
+
