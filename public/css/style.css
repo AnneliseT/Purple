@@ -92,13 +92,13 @@ section.entry {
   vertical-align: text-bottom;
 }
 /* site footer */
-footer {
+.footer {
   margin-top: 5px;
   border-top: 1px solid #9973A1;
   color: #A9A9A9;
 }
 /* site footer paragraph */
-footer p {
+.footer {
   font-size: 0.8em;
 }
 .float-right {
@@ -120,14 +120,49 @@ footer p {
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
+
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fcfbfc;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 2px solid #888;
+    width: 25%;
+    height: 50%;
+    color: black;
+    border-radius: 5px;
+}
+.modal-body{
+    left:50%;
+    top: 50%;
+}
+.rtable{
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    text-align: center;
+}
+.registerdiv{
+    margin-left: 10%;
+    text-align: center;
+    width: 100%;
+}
+.registerlogo{
+    margin: 5% auto 5% auto;
+    width: 30%;
+}
+.sign-button{
+    margin: 10% auto 2% auto;
+    margin-left: 43%
+}
+.sign-button p{
+    margin: 2% auto 2% auto;
+    margin-left: 8%;
+}
+.sign-google{
+    margin: 2% auto 5% auto;
+    margin-left: 35%;
 }
 .body {
-    background-image: url("Images/purple.jpg");
+    background-image: url("../images/purple.jpg");
 }
 
 .nav{
