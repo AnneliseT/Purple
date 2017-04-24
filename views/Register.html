@@ -1,0 +1,65 @@
+<button onclick="showRegister()" class="float-right" style="width:auto;"> Register</button>
+
+<!-- Register Modal
+<div id="register01" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="registerlogo">
+                <img src="/images/logo1.png">
+            </div>
+            <div class="registerdiv">
+                <div class="rtable">
+                    <table style="text-align: right">
+                        <tr>
+                            <th>Username:</th>
+                            <th><input type="text" placeholder="Username" name="unamer" required></th>
+                        </tr>
+                        <tr>
+                            <th>Password:</th>
+                            <th><input type="text" placeholder="Password" name="pswr" required></th>
+                        </tr>
+                        <tr>
+                            <th>Confirm Password:</th>
+                            <th><input type="text" placeholder="Confirm Password" name="pswc" required></th>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="sign-button">
+                <button onclick="showLogin()"> Sign Up</button>
+                <br>
+                <p>or</p>
+            </div>
+            <div>
+                <button id="sign-in-or-out-button" style="margin-left: 25px">Sign In/Authorize</button>
+                <button id="revoke-access-button" style="display: none; margin-left: 25px">Revoke access</button>
+                <div id="auth-status" style="display: inline; padding-left: 25px"></div>
+                <hr>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script async defer src="https://apis.google.com/js/api.js"
+                        onload="this.onload=function(){};handleClientLoad()"
+                        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+                </script>
+            </div>
+
+        </div>
+    </div>
+        <button onclick="showLogin()" class="float-right" style="width:auto;"> Login</button>
+    <div id="login01" class="modal">
+        <div class="modal-content2">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+
+            <!-- Google Login-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id"
+      content="17667259232-7cjv5kk2e9bo5tdkmjtiraopp4vbrb66.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+</div>
+</div>
