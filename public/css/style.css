@@ -25,15 +25,16 @@
     color: #ffffff;
     background-color: #303030;
     list-style:none;
-    text-align: left;
+    text-align: center;
 
     height: 5%;
-    width:40%;
+    width:100%;
 }
 
 .nav li{
     display: inline-block;
     padding-right: 25px;
+    width:20%;
 }
 
 .nav li a{
