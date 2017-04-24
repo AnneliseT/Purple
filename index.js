@@ -5,35 +5,39 @@ var express = require('express'),
     path = require('path'),
     favicon = require('serve-favicon'),
     logger = require('morgan'),
-    users = require('./routes/user'),
+    cart = require('./routes/cart'),
+    user = require('./routes/user'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
     exphbs = require('express-handlebars'),
     app = express(),
     port = 8080,
     mongo = require('mongodb'),
-    monk = require('monk'),
-    url = 'localhost:27017/purple',
-    db = monk(url);
-
-
+    db = require('monk')('localhost:27017/purple'),
+    cartlist = db.get('cart'),
+    userlist=db.get('userlist')
+    ;
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.use(express.static(__dirname + '/public'));
+
 
 app.use(function (req, res, next) {
     req.db = db;
+    console.log(db.showdatabase);
     next();
 });
 
 app.get('/', function (req, res) {
     res.render('about');
 });
-app.use('/users', users);
+app.get('/history',function(req,res){
+    res.render('history');
+});
+app.use('/user', user);
 app.get('/cart', function (req, res) {
     res.render('cart');
-})
+});
 app.get('/spending', function (req, res) {
     res.render('spending');
 });
@@ -41,7 +45,7 @@ app.get('/history', function (req, res) {
     res.render('history');
 });
 
-
+app.use(express.static(__dirname + '/public'));
 /*
  const mongoose = require('mongoose');
  const user = "teampurple";

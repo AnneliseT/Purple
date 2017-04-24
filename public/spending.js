@@ -229,10 +229,21 @@ function Purchases() {
         }
     });
     // initial calc of total price
+    // Add final
+
     updateTotalPrice();
     //createTable();
-}
 
+}
+function add() {
+    var data = $(".item-output");
+    $.ajax({
+        type: 'POST',
+        data: data,
+        url:'/cart/add',
+        dataType: 'JSON'
+    });
+}
 
 $(document).ready(Purchases);
 
