@@ -35,6 +35,7 @@ var canvas = d3.select("body").append("svg")
       .data(data)
       .enter()
        .append("text")
+       .attr("fill", "white");
        .attr("y", function(d, i) {return i *50; })
        .text (function(d) {return d.category +  25 ;})
 
