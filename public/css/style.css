@@ -20,8 +20,17 @@
     width:100%;
 
 }
+
 .nav{
-    display:inline-table;
+  color: #ffffff;
+  background-color: #303030;
+  font-style: arial;
+  list-style:none;
+  text-align: left;
+  padding: 3px 3px;
+}
+/*.nav{
+
     color: #ffffff;
     background-color: #303030;
     list-style:none;
@@ -29,7 +38,7 @@
 
     height: 5%;
     width:40%;
-}
+}*/
 
 .nav li{
     display: inline-block;

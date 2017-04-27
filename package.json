@@ -1,0 +1,36 @@
+{
+  "name": "purple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servere.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.4",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "googleapis": "^19.0.0",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.6",
+    "monk": "^4.0.0",
+    "morgan": "^1.8.1",
+    "serve-favicon": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnneliseT/Purple.git"
+  },
+  "keywords": [
+    "budget"
+  ],
+  "author": "purple team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnneliseT/Purple/issues"
+  },
+  "homepage": "https://github.com/AnneliseT/Purple#readme"
+}

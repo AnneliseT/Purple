@@ -43,7 +43,11 @@ app.get('/spending', function (req, res) {
 });
 app.get('/history', function (req, res) {
     res.render('history');
-});
+  });
+
+app.get('/d3', function (req, res) {
+    res.render('d3');
+  });
 
 app.use(express.static(__dirname + '/public'));
 /*
