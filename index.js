@@ -46,7 +46,7 @@ app.get('/history', function (req, res) {
   });
 
 app.get('/d3', function (req, res) {
-    res.render('d3');
+    res.render('/GraphChart/d3');
   });
 
 app.use(express.static(__dirname + '/public'));

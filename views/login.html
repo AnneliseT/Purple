@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 800px}
+
+    /* Set gray background color and 100% height */
+    .right {
+      background-color: #dfc5f9;
+      height: 100%;
+    }
+
+    button {
+    background-color: #592b63;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+            }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-6 left">
+      <hr>
+      <br><br><br>
+<h3>Welcome!</h3>
+<br><br><br>
+      Purple is an expense tracking application that allows you to customize expenditure categories and view textual and graphical summaries of their expenses.
+
+    </div>
+
+    <div class="col-sm-6 right">
+
+      <hr>
+
+
+
+      <br><br><br>
+
+    <div class="container">
+  <h2>Login</h2>
+  <p>Please enter your Google user name and password:</p>
+  <form>
+    <!-- <div class="form-group">
+      <label for="usr">User Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div> -->
+
+
+
+    <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+<br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <!-- <input type="submit" class="btn btn-info" value="Sign in"> -->
+<button type="submit">Login</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+
+  </form>
+
+       </div>
+              <br>
+            </div>
+      </div>
+    </div>
+
+
+<footer class="container-fluid">
+  <p>2017 Purple, Inc. </p>
+</footer>
+
+</body>
+</html>

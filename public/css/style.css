@@ -66,10 +66,10 @@
 }
 
 body {
-    background-image: url("../images/purple.jpg");
+    /*background-image: url("../images/purple.jpg");*/
   width: 70%;
   margin: auto;
-  background: #fcfbfc;
+  background: #dfc5f9;
   font-size: 15px;
   font-family: "Courier New", Georgia, Serif;
 }
@@ -165,8 +165,9 @@ section.entry {
   color: #A9A9A9;
 }
 /* site footer paragraph */
-.footer {
+.footer p{
   font-size: 0.8em;
+
 }
 .float-right {
   float:right;
