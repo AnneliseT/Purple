@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    /* Set height of the grid */
     .row.content {height: 800px}
 
-    /* Set purple background color and 100% height */
+    /* Set right background color as purple and 100% height */
     .right {
       background-color: #dfc5f9;
       height: 100%;
     }
 
     button {
-    background-color: #592b63;
+    background-color: #592b63 ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 30%;
+    width: 15%;
 }
 
-button:hover {
+   button:hover {
     opacity: 0.8;
-}
+    }
 
     /* Set black background color, white text and some padding */
+
+    header{
+      background-color: #663399;
+      padding: 1px;
+    }
     footer {
       background-color: #555;
       color: white;
-      padding: 15px;
+      padding: 5px;
     }
 
     input[type=text], input[type=password] {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -47,60 +53,64 @@ button:hover {
     box-sizing: border-box;
             }
 
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 100px) {
-      .left {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;}
+    h1
+    {
+      color:  #663399;
     }
+    h2
+    {
+      color: 	#663399;
+    }
+
+    h5{
+      color: #663399;
+    }
+
   </style>
 </head>
+<header class="container-fluid">
+    <br>
+</header>
 <body>
 
-<div class="container-fluid">
+ <div class="container-fluid">
   <div class="row content">
+    <!-- left side contents: Welcome to Purple  -->
     <div class="col-sm-6 left">
-      <hr>
-      <br><br><br>
-<h3>Welcome!</h3>
-<br><br><br>
-      Purple is an expense tracking application that allows you to customize expenditure categories and view textual and graphical summaries of their expenses.
+
+      <br><br><br><br><br>
+          <img src="logo1.png" alt="logo" ALIGN = "left"/style="width:100px;height:100px;">
+          <h1>Welcome to Purple!</h1>
+          <h5>Find out where your money goes</h5>
 
     </div>
 
+
+    <!-- right side contents: Login Page -->
     <div class="col-sm-6 right">
-      <hr>
-      <br><br><br>
 
+      <br><br><br>
        <h2>Login</h2>
-       <p>Please enter your Google user name and password:</p>
+       <hr>
+       <!-- <p>Please enter your Google user name and password:</p> -->
        <form>
-    <!-- <div class="form-group">
-      <label for="usr">User Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div> -->
+
         <label><b>Username</b></label>
+        <br>
         <input type="text" placeholder="Enter Username" name="uname" required>
         <br>
         <label><b>Password</b></label>
+        <br>
         <input type="password" placeholder="Enter Password" name="psw" required>
-
+        <br>
   <!-- <input type="submit" class="btn btn-info" value="Sign in"> -->
        <button type="submit">Login</button>
        <span class="psw">Forgot <a href="#">password?</a></span>
 
-          </form>
-
-
-        </div>
-      </div>
+      </form>
     </div>
+  </div>
+ </div>
 
 <footer class="container-fluid">
   <p>2017 Purple, Inc. </p>
