@@ -11,7 +11,7 @@
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 800px}
 
-    /* Set gray background color and 100% height */
+    /* Set purple background color and 100% height */
     .right {
       background-color: #dfc5f9;
       height: 100%;
@@ -48,8 +48,8 @@ button:hover {
             }
 
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
+    @media screen and (max-width: 100px) {
+      .left {
         height: auto;
         padding: 15px;
       }
@@ -71,17 +71,12 @@ button:hover {
     </div>
 
     <div class="col-sm-6 right">
-
       <hr>
-
-
-
       <br><br><br>
 
-    <div class="container">
-  <h2>Login</h2>
-  <p>Please enter your Google user name and password:</p>
-  <form>
+       <h2>Login</h2>
+       <p>Please enter your Google user name and password:</p>
+       <form>
     <!-- <div class="form-group">
       <label for="usr">User Name:</label>
       <input type="text" class="form-control" id="usr">
@@ -90,27 +85,22 @@ button:hover {
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="pwd">
     </div> -->
-
-
-
-    <label><b>Username</b></label>
+        <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
-<br>
+        <br>
         <label><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
   <!-- <input type="submit" class="btn btn-info" value="Sign in"> -->
-<button type="submit">Login</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+       <button type="submit">Login</button>
+       <span class="psw">Forgot <a href="#">password?</a></span>
 
-  </form>
+          </form>
 
-       </div>
-              <br>
-            </div>
+
+        </div>
       </div>
     </div>
-
 
 <footer class="container-fluid">
   <p>2017 Purple, Inc. </p>
