@@ -1,3 +1,22 @@
+header{
+  background-color: #663399;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+}
+
+
+h2{
+  font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+
 .logo{
     float:left;
     padding-top: 1px;
@@ -6,12 +25,6 @@
     width:10%;
 }
 
-.logotext{
-    display:inline-block;
-    color:black;
-    width:45%;
-    height: 10%;
-}
 .loginicon{
     display:inline-block;
     text-align: right;
@@ -19,6 +32,7 @@
     height:5%;
     width:100%;
 }
+
 
 .nav{
   color: #ffffff;
@@ -72,6 +86,9 @@ body {
   font-size: 15px;
   font-family: "Courier New", Georgia, Serif;
 }
+
+
+h2{ font-size: 10px;}
 /* heading 3 */
 h3 {
   font-size: 1.75em;
@@ -82,15 +99,17 @@ h5 {
   margin: 10px 0 10px 0;
 }
 /* site header */
-header {
-  border-bottom: 1px solid #9973A1;
-}
+
+/*header{
+  background-color: #663399;
+  padding: 1px;
+}*/
 /* site header paragraph */
-header p {
+/*header p {
   font-size: 1.25em;
   font-style: italic;
   color: #cc00cc;
-}
+}*/
 /* site main content category */
 main {
   overflow: auto;
@@ -173,7 +192,7 @@ section.entry {
 footer {
   background-color: #555;
   color: white;
-  padding: 15px;
+  padding: 5px;
 }
 
 .float-right {
