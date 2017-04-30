@@ -17,7 +17,7 @@ h2{
 }
 
 
-.logo{
+/*.logo{
     float:left;
     padding-top: 1px;
     color: black;
@@ -31,7 +31,7 @@ h2{
     color:black;
     height:5%;
     width:100%;
-}
+}*/
 
 
 .nav{
@@ -88,7 +88,6 @@ body {
 }
 
 
-h2{ font-size: 10px;}
 /* heading 3 */
 h3 {
   font-size: 1.75em;
@@ -118,19 +117,36 @@ main {
   border-radius: 4px;
 }
 /* default button style */
-button {
+/*button {
   padding: 2px;
   margin: 2px;
   border-radius: 2px;
   border: 1px solid #dedede;
   cursor: pointer;
 }
+
 /* default button hover style */
-button:hover {
+/*button:hover {
   background-color: #aaa;
   color: #fff;
     font-family: "Courier New";
-}
+}*/
+
+button {
+        background-color: #592b63 ;
+        color: white;
+        padding: 10px;
+        margin: 2px 0;
+        border: 0.5px solid #dedede;
+        cursor: pointer;
+        border-radius: 4px
+    }
+
+button:hover {
+        opacity: 0.8;
+        }
+
+
 /* input field for note */
 .item-input input {
   width: 40%;
@@ -176,19 +192,9 @@ section.entry {
   border-top: 1px dotted #ded1e0;
   vertical-align: text-bottom;
 }
+
+
 /* site footer */
-/*.footer {
-  margin-top: 5px;
-  border-top: 1px solid #9973A1;
-  color: #A9A9A9;
-}
- site footer paragraph */
-/*.footer p{
-  font-size: 0.8em;
-
-}*/
-
-
 footer {
   background-color: #555;
   color: white;

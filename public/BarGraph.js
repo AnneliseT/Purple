@@ -33,7 +33,6 @@ var yAxis = d3.svg.axis()
 d3.csv("DataSample.csv", function(error,data) {
   if(error) console.log("Error: data not loaded!");
 
-
   data.forEach(function(d) {
     d.category = d.category;
     d.value = +d.value;
@@ -67,7 +66,7 @@ d3.csv("DataSample.csv", function(error,data) {
       "height": function(d) { return  height - yScale(d.value); }
     })
 
-    .style("fill", function(d,i) { return 'rgb(135, 2, ' + ((i * 15) + 100) + ')'});
+    .style("fill", function(d,i) { return 'rgb(128 , 20, ' + ((i * 15) + 100) + ')'});
 
 
         svg.selectAll('text')

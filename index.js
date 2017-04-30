@@ -21,7 +21,6 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 
-
 app.use(function (req, res, next) {
     req.db = db;
     console.log(db.showdatabase);
@@ -46,8 +45,9 @@ app.get('/history', function (req, res) {
   });
 
 app.get('/d3', function (req, res) {
-    res.render('/GraphChart/d3');
+    res.render('d3');
   });
+
 
 app.use(express.static(__dirname + '/public'));
 /*
