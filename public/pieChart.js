@@ -25,7 +25,7 @@ var pie = d3.pie()
     .value(function(d) { return d.value; });
 
 // define the svg for pie chart
-var svg = d3.select("body").select("div.nine")
+var svg = d3.select("body").select("div.col-9")
 .append("svg")
     .attr("width", width)
     .attr("height", height)
