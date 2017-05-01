@@ -283,7 +283,7 @@ float: left;
 	width: 74.5%;
 	float: left;
 	/*margin-left: 2%;*/
-  height: 800px;
+  height: 900px;
 
 }
 .eight {
@@ -316,7 +316,7 @@ float: left;
 	width: 23.5%;
 	float:left;
 	/*margin-left: 2%;*/
-  height: 800px;
+  height: 900px;
 
 }
 
@@ -463,3 +463,24 @@ display: inline-block;
 border: 1px solid #ccc;
 box-sizing: border-box;
         }
+
+/*.main
+
+body {
+
+
+  margin: auto;
+  background: #dfc5f9;
+  font-size: 15px;
+  font-family: "Courier New", Georgia, Serif;
+}*/
+
+/*Main part for About Page */
+main {
+  /*margin: 8px 0;*/
+  /*overflow: auto;*/
+  padding: 20px;
+  margin: 38px;
+  /*background-color: 	#663399;*/
+  /*border-radius: 4px;*/
+}
