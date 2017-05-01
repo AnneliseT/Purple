@@ -9,12 +9,27 @@ header{
   letter-spacing: 2px;
 }
 
-
 h2{
   font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
 }
+
+
+/*
+.row.content {height: 200px}
+
+.sideuser {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+
+
+.right {
+  background-color: #dfc5f9;
+  height: 100%;
+}*/
+
 
 
 /*.logo{
@@ -77,15 +92,15 @@ h2{
     border:150px;
     height:80%;
 }
-
+/*
 body {
-    /*background-image: url("../images/purple.jpg");*/
-  width: 70%;
+
+
   margin: auto;
   background: #dfc5f9;
   font-size: 15px;
   font-family: "Courier New", Georgia, Serif;
-}
+}*/
 
 
 /* heading 3 */
@@ -110,12 +125,12 @@ h5 {
   color: #cc00cc;
 }*/
 /* site main content category */
-main {
+/*main {
   overflow: auto;
   padding: 15px 0 15px 0;
   background-color: 	#663399;
   border-radius: 4px;
-}
+}*/
 /* default button style */
 /*button {
   padding: 2px;
@@ -137,7 +152,7 @@ button {
         color: white;
         padding: 10px;
         margin: 2px 0;
-        border: 0.5px solid #dedede;
+        border: 1px solid #dedede;
         cursor: pointer;
         border-radius: 4px
     }
@@ -198,7 +213,9 @@ section.entry {
 footer {
   background-color: #555;
   color: white;
-  padding: 5px;
+  padding: 1px;
+  font-size: 1em;
+
 }
 
 .float-right {
@@ -206,4 +223,97 @@ footer {
 }
 .inline {
     display: inline;
+}
+
+/*
+.row{
+  height: 500px;
+
+}*/
+
+/*.row.content {height: 200px}*/
+/*.col{
+  background: #f1f1f1;
+
+  display: inline-block;
+float: left;
+
+}*/
+
+.container {
+	width: 100%; /*Set the width of the entire website here */
+	margin-right: auto;
+	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+}
+
+.seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child {
+	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+}
+
+.eleven {
+	width: 91.5%;
+	float: left;
+	margin-left: 2%;
+}
+.ten {
+	width: 83%;
+	float: left;
+	margin-left: 2%;
+}
+.nine {
+	width: 74.5%;
+	float: left;
+	/*margin-left: 2%;*/
+  height: 800px;
+
+}
+.eight {
+	width: 66%;
+	float: left;
+	margin-left: 2%;
+}
+.seven {
+	width: 57.5%;
+	float: left;
+	margin-left: 2%;
+}
+.six {
+	width: 49%; /* This div spans six columns (the entire row)*/
+	float: left;
+	margin-left: 2%;
+}
+.five {
+	width: 40.5%; /* This div spans five columns */
+	margin-left: 2%;
+	float:left;
+}
+.four {
+	width: 32%;
+	float:left;
+	margin-left: 2%;
+}
+.three {
+	width: 23.5%;
+	float:left;
+	/*margin-left: 2%;*/
+  height: 800px;
+
+}
+
+.two {
+	width: 15%;
+	float:left;
+	margin-left: 2%;
+
+}
+.one {
+	width: 6.5%;
+	float:left;
+	margin-left: 2%;
+}
+.row {
+	width: 100%;
+  clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
 }

@@ -48,6 +48,10 @@ app.get('/d3', function (req, res) {
     res.render('d3');
   });
 
+  app.get('/about', function (req, res) {
+      res.render('about');
+    });
+
 
 app.use(express.static(__dirname + '/public'));
 /*
