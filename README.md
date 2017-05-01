@@ -4,10 +4,15 @@ The project creates an opportunity for users to customize their own expenditure 
 
 # Purple
 Node index.js
+Home
 http://localhost:8080/
+About us
 http://localhost:8080/about
+Spending
 http://localhost:8080/spending
+Bar Graph
 http://localhost:8080/bar
+Pie Graph
 http://localhost:8080/pie
 
 Pages: 
