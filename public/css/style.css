@@ -1,3 +1,4 @@
+    /* Set  header */
 header{
   background-color: #663399;
   padding: 5px;
@@ -8,12 +9,38 @@ header{
   font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 2px;
 }
-
+h1
+{
+  color:  #663399;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 h2{
   font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
 }
+
+h3
+{
+  color: 	#663399;
+ font-size: 1.75em;
+}
+
+h5{
+  color: #663399;
+  font-size: 1.25em;
+  margin: 10px 0 10px 0;
+}
+
+
+/* site footer */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 1px;
+  font-size: 1em;
+}
+
 
 
 /*
@@ -104,14 +131,14 @@ body {
 
 
 /* heading 3 */
-h3 {
+/*h3 {
   font-size: 1.75em;
-}
+}*/
 /* heading 5 */
-h5 {
+/*h5 {
   font-size: 1.25em;
   margin: 10px 0 10px 0;
-}
+}*/
 /* site header */
 
 /*header{
@@ -150,17 +177,27 @@ h5 {
 button {
         background-color: #592b63 ;
         color: white;
-        padding: 10px;
-        margin: 2px 0;
+        padding: 14px 20px;
+        margin: 4px 0;
         border: 1px solid #dedede;
         cursor: pointer;
-        border-radius: 4px
+        width: 15%;
+        border-radius: 4px;
+        display: inline-block;
+
     }
 
 button:hover {
         opacity: 0.8;
         }
 
+
+
+
+.cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+            }
 
 /* input field for note */
 .item-input input {
@@ -209,14 +246,6 @@ section.entry {
 }
 
 
-/* site footer */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 1px;
-  font-size: 1em;
-
-}
 
 .float-right {
   float:right;
@@ -280,7 +309,8 @@ float: left;
 .six {
 	width: 49%; /* This div spans six columns (the entire row)*/
 	float: left;
-	margin-left: 2%;
+  /*height: 800px;*/
+	/*margin-left: 2%;*/
 }
 .five {
 	width: 40.5%; /* This div spans five columns */
@@ -313,7 +343,98 @@ float: left;
 }
 .row {
 	width: 100%;
-  clear: both; /* Clear creates new styles for the next row */
+  /*clear: both; /* Clear creates new styles for the next row */*/
 	padding: 0px;
 	margin: 0px;
 }
+
+.signupbtn {
+  float: left;
+  width:50%
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.smallbox {
+    padding: 20px;
+      background-color: #fefefe;
+}
+
+.bigbox {
+  background-color: #dfc5f9;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: none;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/* Set right background color as purple and 100% height */
+.right {
+  background-color: #dfc5f9;
+  height: 100%;
+}
+
+input[type=text], input[type=password] {
+width: 70%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+        }

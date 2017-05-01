@@ -30,6 +30,12 @@ app.use(function (req, res, next) {
 app.get('/', function (req, res) {
     res.render('about');
 });
+
+// app.get('/login',function(req,res){
+//   res.sendFile(path.join(__dirname+'/login.html'));
+// });
+
+
 app.get('/history',function(req,res){
     res.render('history');
 });
@@ -48,9 +54,15 @@ app.get('/d3', function (req, res) {
     res.render('d3');
   });
 
-  app.get('/about', function (req, res) {
-      res.render('about');
+  // app.get('/login',function(req,res){
+  //   res.sendFile(path.join(__dirname+'/login.html'));
+  // });
+
+  app.get('/login', function (req, res) {
+      res.render('login');
     });
+
+
 
 
 app.use(express.static(__dirname + '/public'));
