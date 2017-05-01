@@ -43,7 +43,6 @@ footer {
 
 
 /*grid*/
-
 * {
     box-sizing: border-box;
 }
@@ -73,6 +72,13 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
+/*Main part for About/Main Page */
+main {
+  padding: 20px;
+  margin: 38px;
+  font-size: 15px;
+  font-family: Georgia;
+}
 
     /* Side Tab */
 .sidenav{
@@ -115,7 +121,7 @@ button {
         margin: 4px 0;
         border: 1px solid #dedede;
         cursor: pointer;
-        width: 15%;
+        width: auto;
         border-radius: 4px;
         display: inline-block;
 
@@ -176,8 +182,6 @@ section.entry {
   vertical-align: text-bottom;
 }
 
-
-
 .float-right {
   float:right;
 }
@@ -185,20 +189,6 @@ section.entry {
     display: inline;
 }
 
-/*
-.row{
-  height: 500px;
-
-}*/
-
-/*.row.content {height: 200px}*/
-/*.col{
-  background: #f1f1f1;
-
-  display: inline-block;
-float: left;
-
-}*/
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,.signupbtn {float:left;width:50%}
@@ -207,6 +197,21 @@ float: left;
 .box3 {
 padding: 16px;
 }
+
+/*/loginPage*/
+.smallbox {
+    padding: 20px;
+      background-color: #fefefe;
+}
+
+.bigbox {
+  background-color: #dfc5f9;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: none;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -221,7 +226,7 @@ img.avatar {
 }
 
 /* Add Zoom Animation */
-.animate {
+/*.animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
@@ -234,16 +239,11 @@ img.avatar {
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
-}
-
-
-
-
+}*/
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
@@ -264,17 +264,11 @@ img.avatar {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
-.smallbox {
-    padding: 20px;
-      background-color: #fefefe;
+/* Add padding to container elements */
+.container {
+    padding: 16px;
 }
 
-.bigbox {
-  background-color: #dfc5f9;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: none;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
 
 /* The Close Button (x) */
 .close {
@@ -306,16 +300,6 @@ img.avatar {
   }
 }
 
-
-
-
-
-/* Set right background color as purple and 100% height */
-.right {
-  background-color: #dfc5f9;
-  height: 100%;
-}
-
 input[type=text], input[type=password] {
 width: 70%;
 padding: 12px 20px;
@@ -324,26 +308,3 @@ display: inline-block;
 border: 1px solid #ccc;
 box-sizing: border-box;
         }
-
-/*.main
-
-body {
-
-
-  margin: auto;
-  background: #dfc5f9;
-  font-size: 15px;
-  font-family: "Courier New", Georgia, Serif;
-}*/
-
-/*Main part for About Page */
-main {
-  /*margin: 8px 0;*/
-  /*overflow: auto;*/
-  padding: 20px;
-  margin: 38px;
-  font-size: 15px;
-  /*background-color: 	#663399;*/
-  /*border-radius: 4px;*/
-
-}

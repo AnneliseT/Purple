@@ -7,19 +7,19 @@ var margin = {top: 20, right: 20, bottom: 20, left: 20},
 // color range
 var color = d3.scaleOrdinal()
     .range(["#ab8ff9", "#9f53ef", "#8120e8", "#5c0fad", "#3e0a75", "#2c0754"]);
+    // .style("fill", function(d,i) { return 'rgb(128 , 20, ' + ((i * 15) + 100) + ')'});
 
 // pie chart arc.
 var arc = d3.arc()
     .outerRadius(radius - 10)
     .innerRadius(0);
 
-
 // arc for the labels position
 var labelArc = d3.arc()
     .outerRadius(radius - 40)
     .innerRadius(radius - 40);
 
-// generate pie chart and donut chart
+// generate pie chart
 var pie = d3.pie()
     .sort(null)
     .value(function(d) { return d.value; });
@@ -42,10 +42,18 @@ d3.csv("DataSample.csv", function(error, data) {
         d.category = d.category;
     })
 
+
+    // // sort the price values
+    // data.sort(function(a,b) {
+    //   return b.value - a.value;
+    // });
+
   var g = svg.selectAll(".arc")
       .data(pie(data))
      .enter().append("g")
       .attr("class", "arc");
+
+
 
   // append path
   g.append("path")
@@ -63,10 +71,10 @@ d3.csv("DataSample.csv", function(error, data) {
     .transition()
       .ease(d3.easeLinear)
       .duration(500)
-     .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-      .attr("dy", "0.10em")
+      .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+      .attr("dy", "2em")
       .text(function(d) {
-        return d.data.category + "  " +d.data.value;
+        return d.data.category + "  "+d.data.value ;
        });
       });
 

@@ -17,11 +17,14 @@ svg {
     font: Times;
     font-size: 12px;
     font-weight: bold;
+
 }
 
 .arc text {
-  font: 10px sans-serif;
+  font:  Georgia;
+  font-size: 11px;
   text-anchor: middle;
+  font-weight: bold;
 }
 
 .arc path {

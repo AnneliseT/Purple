@@ -39,7 +39,7 @@ d3.csv("DataSample.csv", function(error,data) {
     console.log(d.value);
   });
 
-  // sort the gdp values
+  // sort the price values
   data.sort(function(a,b) {
     return b.value - a.value;
   });
