@@ -31,6 +31,10 @@ app.get('/', function (req, res) {
     res.render('about');
 });
 
+app.get('/about', function (req, res) {
+    res.render('about');
+});
+
 // app.get('/login',function(req,res){
 //   res.sendFile(path.join(__dirname+'/login.html'));
 // });
@@ -61,8 +65,6 @@ app.get('/d3', function (req, res) {
   app.get('/login', function (req, res) {
       res.render('login');
     });
-
-
 
 
 app.use(express.static(__dirname + '/public'));
