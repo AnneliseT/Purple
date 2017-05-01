@@ -66,6 +66,11 @@ app.get('/d3', function (req, res) {
       res.render('login');
     });
 
+app.get('/pie', function (req, res) {
+        res.render('pie');
+      });
+    
+
 
 app.use(express.static(__dirname + '/public'));
 /*

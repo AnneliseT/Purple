@@ -25,7 +25,8 @@ var pie = d3.pie()
     .value(function(d) { return d.value; });
 
 // define the svg for pie chart
-var svg = d3.select("body").append("svg")
+var svg = d3.select("body").select("div.nine")
+.append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
@@ -56,15 +57,18 @@ d3.csv("DataSample.csv", function(error, data) {
       .duration(500)
       .attrTween("d", tweenPie);
 
+
   // append text
   g.append("text")
     .transition()
       .ease(d3.easeLinear)
       .duration(500)
      .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-      .attr("dy", "0.30em")
-      .text(function(d) { return d.data.category; });
-});
+      .attr("dy", "0.10em")
+      .text(function(d) {
+        return d.data.category + "  " +d.data.value;
+       });
+      });
 
 // Helper function for animation of pie chart
 function tweenPie(b) {
