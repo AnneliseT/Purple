@@ -28,7 +28,7 @@ h3
 
 h5{
   color: #663399;
-  font-size: 1.25em;
+  font-size: 0.8em;
   margin: 10px 0 10px 0;
 }
 
@@ -83,6 +83,7 @@ main {
     /* Side Tab */
 .sidenav{
         width: 100%;
+        height: 100%;
       }
 
 .sidenav a{
@@ -102,8 +103,6 @@ main {
     background-color: #592b63;
     color: white;
 }
-
-
 
 .title{
     display: inline-block;
@@ -193,11 +192,6 @@ section.entry {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,.signupbtn {float:left;width:50%}
 
-/* Add padding to container elements */
-.box3 {
-padding: 16px;
-}
-
 /*/loginPage*/
 .smallbox {
     padding: 20px;
@@ -210,8 +204,6 @@ padding: 16px;
   border: none;
   width: 50%; /* Could be more or less, depending on screen size */
 }
-
-
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -268,7 +260,6 @@ img.avatar {
 .container {
     padding: 16px;
 }
-
 
 /* The Close Button (x) */
 .close {
