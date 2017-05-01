@@ -3,7 +3,7 @@ var margin = {top: 20, right: 10, bottom: 100, left:50},
     width = 700 - margin.right - margin.left,
     height = 500 - margin.top - margin.bottom;
 
-var svg = d3.select("body")
+var svg = d3.select("body").select("div.nine")
     .append("svg")
       .attr ({
         "width": width + margin.right + margin.left,
