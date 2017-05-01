@@ -32,48 +32,14 @@ h5{
   margin: 10px 0 10px 0;
 }
 
-
 /* site footer */
 footer {
   background-color: #555;
   color: white;
   padding: 1px;
-  font-size: 1em;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
-
-
-
-/*
-.row.content {height: 200px}
-
-.sideuser {
-  padding-top: 20px;
-  background-color: #f1f1f1;
-  height: 100%;
-
-
-.right {
-  background-color: #dfc5f9;
-  height: 100%;
-}*/
-
-
-
-/*.logo{
-    float:left;
-    padding-top: 1px;
-    color: black;
-    height: 10%;
-    width:10%;
-}
-
-.loginicon{
-    display:inline-block;
-    text-align: right;
-    color:black;
-    height:5%;
-    width:100%;
-}*/
 
 
     /* Side Tab */
@@ -98,7 +64,6 @@ footer {
     background-color: #592b63;
     color: white;
 }
-
 
 
 .title{
@@ -259,86 +224,6 @@ float: left;
 
 }*/
 
-.container {
-	width: 100%; /*Set the width of the entire website here */
-	margin-right: auto;
-	margin-left: auto; /* Margin-left and right are set to auto to center the container */
-}
-
-.seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child {
-	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
-}
-
-.eleven {
-	width: 91.5%;
-	float: left;
-	margin-left: 2%;
-}
-.ten {
-	width: 83%;
-	float: left;
-	margin-left: 2%;
-}
-.nine {
-	width: 74.5%;
-	float: left;
-	/*margin-left: 2%;*/
-  height: 900px;
-
-}
-.eight {
-	width: 66%;
-	float: left;
-	margin-left: 2%;
-}
-.seven {
-	width: 57.5%;
-	float: left;
-	margin-left: 2%;
-}
-.six {
-	width: 49%; /* This div spans six columns (the entire row)*/
-	float: left;
-  /*height: 800px;*/
-	/*margin-left: 2%;*/
-}
-.five {
-	width: 40.5%; /* This div spans five columns */
-	margin-left: 2%;
-	float:left;
-}
-.four {
-	width: 32%;
-	float:left;
-	margin-left: 2%;
-}
-.three {
-	width: 23.5%;
-	float:left;
-	/*margin-left: 2%;*/
-  height: 900px;
-
-}
-
-.two {
-	width: 15%;
-	float:left;
-	margin-left: 2%;
-
-}
-.one {
-	width: 6.5%;
-	float:left;
-	margin-left: 2%;
-}
-.row {
-	width: 100%;
-  /*clear: both; /* Clear creates new styles for the next row */*/
-	padding: 0px;
-	margin: 0px;
-}
-
-
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,.signupbtn {float:left;width:50%}
 
@@ -483,4 +368,69 @@ main {
   margin: 38px;
   /*background-color: 	#663399;*/
   /*border-radius: 4px;*/
+}
+
+
+/*grid*/
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+
+header{
+  background-color: #663399;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+}
+
+.sidenav{
+        width: 100%;
+      }
+
+.sidenav a{
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.sidenav a:hover{
+    background-color: #ccc;
+
+}
+
+.sidenav a.active {
+    background-color: #592b63;
+    color: white;
 }
