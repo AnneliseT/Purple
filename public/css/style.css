@@ -68,6 +68,7 @@ footer {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
@@ -106,8 +107,6 @@ html {
     border:150px;
     height:80%;
 }
-
-
 
 button {
         background-color: #592b63 ;
@@ -343,6 +342,8 @@ main {
   /*overflow: auto;*/
   padding: 20px;
   margin: 38px;
+  font-size: 15px;
   /*background-color: 	#663399;*/
   /*border-radius: 4px;*/
+
 }

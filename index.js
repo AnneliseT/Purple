@@ -50,27 +50,25 @@ app.get('/cart', function (req, res) {
 app.get('/spending', function (req, res) {
     res.render('spending');
 });
-app.get('/history', function (req, res) {
-    res.render('history');
-  });
 
-app.get('/d3', function (req, res) {
-    res.render('d3');
-  });
-
-  // app.get('/login',function(req,res){
-  //   res.sendFile(path.join(__dirname+'/login.html'));
-  // });
-
-  app.get('/login', function (req, res) {
+app.get('/login', function (req, res) {
       res.render('login');
     });
+
+app.get('/bar', function (req, res) {
+            res.render('bar');
+          });
 
 app.get('/pie', function (req, res) {
         res.render('pie');
       });
-    
 
+      // app.get('/history', function (req, res) {
+      //     res.render('history');
+      //   });
+      // app.get('/login',function(req,res){
+      //   res.sendFile(path.join(__dirname+'/login.html'));
+      // });
 
 app.use(express.static(__dirname + '/public'));
 /*
