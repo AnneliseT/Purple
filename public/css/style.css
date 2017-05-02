@@ -194,8 +194,8 @@ section.entry {
 
 /*/loginPage*/
 .smallbox {
-    padding: 20px;
-      background-color: #fefefe;
+    padding: 60px;
+      /*background-color: #fefefe;*/
 }
 
 .bigbox {
